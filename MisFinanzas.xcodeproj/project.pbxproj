@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8428F6CA24DB72410057A50B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428F6C824DB72410057A50B /* LoginViewController.swift */; };
+		8428F6CB24DB72410057A50B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8428F6C924DB72410057A50B /* LoginViewController.xib */; };
+		8428F6CD24DB72560057A50B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428F6CC24DB72560057A50B /* User.swift */; };
+		8428F6D224DB72DE0057A50B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428F6D024DB72DE0057A50B /* SignUpViewController.swift */; };
+		8428F6D324DB72DE0057A50B /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8428F6D124DB72DE0057A50B /* SignUpViewController.xib */; };
+		8428F6DE24DB74EC0057A50B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428F6DD24DB74EC0057A50B /* BaseViewController.swift */; };
 		84864C1E24D4D99700941000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84864C1D24D4D99700941000 /* AppDelegate.swift */; };
-		84864C2024D4D99700941000 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84864C1F24D4D99700941000 /* ViewController.swift */; };
-		84864C2324D4D99700941000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84864C2124D4D99700941000 /* Main.storyboard */; };
 		84864C2524D4D99700941000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84864C2424D4D99700941000 /* Assets.xcassets */; };
 		84864C2824D4D99700941000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84864C2624D4D99700941000 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8428F6C824DB72410057A50B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8428F6C924DB72410057A50B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		8428F6CC24DB72560057A50B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8428F6D024DB72DE0057A50B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8428F6D124DB72DE0057A50B /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		8428F6DD24DB74EC0057A50B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		84864C1A24D4D99700941000 /* MisFinanzas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisFinanzas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84864C1D24D4D99700941000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84864C1F24D4D99700941000 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84864C2224D4D99700941000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84864C2424D4D99700941000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84864C2724D4D99700941000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84864C2924D4D99700941000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +43,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8428F6D424DB73500057A50B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8428F6DC24DB73F60057A50B /* Entities */,
+				8428F6D724DB736E0057A50B /* Base */,
+				8428F6D524DB73590057A50B /* Auth */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8428F6D524DB73590057A50B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8428F6DB24DB73E40057A50B /* SignUp */,
+				8428F6D824DB737A0057A50B /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		8428F6D724DB736E0057A50B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8428F6DD24DB74EC0057A50B /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8428F6D824DB737A0057A50B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8428F6C824DB72410057A50B /* LoginViewController.swift */,
+				8428F6C924DB72410057A50B /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8428F6D924DB739A0057A50B /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				84864C2624D4D99700941000 /* LaunchScreen.storyboard */,
+			);
+			name = Base.lproj;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		8428F6DA24DB73BD0057A50B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84864C2424D4D99700941000 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8428F6DB24DB73E40057A50B /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				8428F6D024DB72DE0057A50B /* SignUpViewController.swift */,
+				8428F6D124DB72DE0057A50B /* SignUpViewController.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		8428F6DC24DB73F60057A50B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8428F6CC24DB72560057A50B /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		84864C1124D4D99700941000 = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +132,10 @@
 		84864C1C24D4D99700941000 /* MisFinanzas */ = {
 			isa = PBXGroup;
 			children = (
+				8428F6DA24DB73BD0057A50B /* Resources */,
+				8428F6D924DB739A0057A50B /* Base.lproj */,
+				8428F6D424DB73500057A50B /* Application */,
 				84864C1D24D4D99700941000 /* AppDelegate.swift */,
-				84864C1F24D4D99700941000 /* ViewController.swift */,
-				84864C2124D4D99700941000 /* Main.storyboard */,
-				84864C2424D4D99700941000 /* Assets.xcassets */,
-				84864C2624D4D99700941000 /* LaunchScreen.storyboard */,
 				84864C2924D4D99700941000 /* Info.plist */,
 			);
 			path = MisFinanzas;
@@ -125,7 +202,8 @@
 			files = (
 				84864C2824D4D99700941000 /* LaunchScreen.storyboard in Resources */,
 				84864C2524D4D99700941000 /* Assets.xcassets in Resources */,
-				84864C2324D4D99700941000 /* Main.storyboard in Resources */,
+				8428F6D324DB72DE0057A50B /* SignUpViewController.xib in Resources */,
+				8428F6CB24DB72410057A50B /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +214,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84864C2024D4D99700941000 /* ViewController.swift in Sources */,
+				8428F6DE24DB74EC0057A50B /* BaseViewController.swift in Sources */,
+				8428F6CA24DB72410057A50B /* LoginViewController.swift in Sources */,
 				84864C1E24D4D99700941000 /* AppDelegate.swift in Sources */,
+				8428F6D224DB72DE0057A50B /* SignUpViewController.swift in Sources */,
+				8428F6CD24DB72560057A50B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		84864C2124D4D99700941000 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84864C2224D4D99700941000 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		84864C2624D4D99700941000 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
