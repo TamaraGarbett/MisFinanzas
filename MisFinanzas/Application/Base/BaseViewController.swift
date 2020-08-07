@@ -1,6 +1,8 @@
 import UIKit
 
 class BaseViewController: UIViewController {
+    let manager = CoreDataManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		8428F6CA24DB72410057A50B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428F6C824DB72410057A50B /* LoginViewController.swift */; };
 		8428F6CB24DB72410057A50B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8428F6C924DB72410057A50B /* LoginViewController.xib */; };
-		8428F6CD24DB72560057A50B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428F6CC24DB72560057A50B /* User.swift */; };
 		8428F6D224DB72DE0057A50B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428F6D024DB72DE0057A50B /* SignUpViewController.swift */; };
 		8428F6D324DB72DE0057A50B /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8428F6D124DB72DE0057A50B /* SignUpViewController.xib */; };
 		8428F6DE24DB74EC0057A50B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428F6DD24DB74EC0057A50B /* BaseViewController.swift */; };
 		8428F6E024DB7CC00057A50B /* LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 8428F6DF24DB7CC00057A50B /* LOGO.png */; };
+		842F15A624DCBC3700B18635 /* MisFinanzas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 842F15A224DCBA7100B18635 /* MisFinanzas.xcdatamodeld */; };
+		842F15A824DCBE6500B18635 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F15A724DCBE6500B18635 /* CoreDataManager.swift */; };
 		84864C1E24D4D99700941000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84864C1D24D4D99700941000 /* AppDelegate.swift */; };
 		84864C2524D4D99700941000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84864C2424D4D99700941000 /* Assets.xcassets */; };
 		84864C2824D4D99700941000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84864C2624D4D99700941000 /* LaunchScreen.storyboard */; };
@@ -22,11 +23,12 @@
 /* Begin PBXFileReference section */
 		8428F6C824DB72410057A50B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8428F6C924DB72410057A50B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		8428F6CC24DB72560057A50B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8428F6D024DB72DE0057A50B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8428F6D124DB72DE0057A50B /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		8428F6DD24DB74EC0057A50B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8428F6DF24DB7CC00057A50B /* LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LOGO.png; path = ../../../LOGO.png; sourceTree = "<group>"; };
+		842F15A324DCBA7100B18635 /* MisFinanzas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MisFinanzas.xcdatamodel; sourceTree = "<group>"; };
+		842F15A724DCBE6500B18635 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		84864C1A24D4D99700941000 /* MisFinanzas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisFinanzas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84864C1D24D4D99700941000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84864C2424D4D99700941000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,9 +113,17 @@
 		8428F6DC24DB73F60057A50B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				8428F6CC24DB72560057A50B /* User.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		842F15A524DCBA7800B18635 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				842F15A224DCBA7100B18635 /* MisFinanzas.xcdatamodeld */,
+				842F15A724DCBE6500B18635 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		84864C1124D4D99700941000 = {
@@ -135,6 +145,7 @@
 		84864C1C24D4D99700941000 /* MisFinanzas */ = {
 			isa = PBXGroup;
 			children = (
+				842F15A524DCBA7800B18635 /* CoreData */,
 				8428F6DA24DB73BD0057A50B /* Resources */,
 				8428F6D924DB739A0057A50B /* Base.lproj */,
 				8428F6D424DB73500057A50B /* Application */,
@@ -222,7 +233,8 @@
 				8428F6CA24DB72410057A50B /* LoginViewController.swift in Sources */,
 				84864C1E24D4D99700941000 /* AppDelegate.swift in Sources */,
 				8428F6D224DB72DE0057A50B /* SignUpViewController.swift in Sources */,
-				8428F6CD24DB72560057A50B /* User.swift in Sources */,
+				842F15A824DCBE6500B18635 /* CoreDataManager.swift in Sources */,
+				842F15A624DCBC3700B18635 /* MisFinanzas.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +409,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		842F15A224DCBA7100B18635 /* MisFinanzas.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				842F15A324DCBA7100B18635 /* MisFinanzas.xcdatamodel */,
+			);
+			currentVersion = 842F15A324DCBA7100B18635 /* MisFinanzas.xcdatamodel */;
+			path = MisFinanzas.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 84864C1224D4D99700941000 /* Project object */;
 }
