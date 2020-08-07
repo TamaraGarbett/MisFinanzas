@@ -35,9 +35,14 @@ class SignUpViewController: BaseViewController {
     }
     
     @IBAction func btnSignUp_Action(){
+        txtEmailEditingDidEnd(txtEmail)
+        txtPasswordEditingDidEnd(txtPassword)
+        txtQuestionEditingDidEnd(txtQuestion)
+        txtAnswerEditingDidEnd(txtAnswer)
+        
         if isEmailOk && isPasswordOk && isQuestionOk && isAnswerOk{
             
-            let user = self.manager.fetchUser(email: txtEmail.text!, password: nil)
+            let user = self.manager.fetchUser(email: txtEmail.text!)
             if user != nil {
                 lblErrorEmail.text = "El email ya está registrado en el sistema"
                 lblErrorEmail.isHidden = false
