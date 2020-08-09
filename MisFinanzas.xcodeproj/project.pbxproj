@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8406223C24E07B3F00196820 /* AuthBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406223B24E07B3F00196820 /* AuthBaseViewController.swift */; };
+		8406224124E08E3000196820 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406223F24E08E3000196820 /* User+CoreDataClass.swift */; };
+		8406224224E08E3000196820 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406224024E08E3000196820 /* User+CoreDataProperties.swift */; };
 		8428F6CA24DB72410057A50B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428F6C824DB72410057A50B /* LoginViewController.swift */; };
 		8428F6CB24DB72410057A50B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8428F6C924DB72410057A50B /* LoginViewController.xib */; };
 		8428F6D224DB72DE0057A50B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428F6D024DB72DE0057A50B /* SignUpViewController.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8406223B24E07B3F00196820 /* AuthBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBaseViewController.swift; sourceTree = "<group>"; };
+		8406223F24E08E3000196820 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8406224024E08E3000196820 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8428F6C824DB72410057A50B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8428F6C924DB72410057A50B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		8428F6D024DB72DE0057A50B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +73,7 @@
 				84B631C324DDDA5D00B0B950 /* ForgotPassword */,
 				8428F6DB24DB73E40057A50B /* SignUp */,
 				8428F6D824DB737A0057A50B /* Login */,
+				8406223B24E07B3F00196820 /* AuthBaseViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -118,6 +125,8 @@
 		8428F6DC24DB73F60057A50B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				8406223F24E08E3000196820 /* User+CoreDataClass.swift */,
+				8406224024E08E3000196820 /* User+CoreDataProperties.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -247,7 +256,10 @@
 				8428F6DE24DB74EC0057A50B /* BaseViewController.swift in Sources */,
 				84B631C624DDDA8400B0B950 /* ForgotPasswordViewController.swift in Sources */,
 				8428F6CA24DB72410057A50B /* LoginViewController.swift in Sources */,
+				8406223C24E07B3F00196820 /* AuthBaseViewController.swift in Sources */,
+				8406224124E08E3000196820 /* User+CoreDataClass.swift in Sources */,
 				84864C1E24D4D99700941000 /* AppDelegate.swift in Sources */,
+				8406224224E08E3000196820 /* User+CoreDataProperties.swift in Sources */,
 				8428F6D224DB72DE0057A50B /* SignUpViewController.swift in Sources */,
 				842F15A824DCBE6500B18635 /* CoreDataManager.swift in Sources */,
 				842F15A624DCBC3700B18635 /* MisFinanzas.xcdatamodeld in Sources */,
