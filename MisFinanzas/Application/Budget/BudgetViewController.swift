@@ -35,12 +35,14 @@ struct Budget{
     let description:String
     let amount: String
 }
+
 extension BudgetViewController: UITableViewDelegate {
     //Asigno la altura para cada una de las filas como una constante (en este caso la static del ImporteTableViewCell)
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return ImporteTableViewCell.height
     }
 }
+
 extension BudgetViewController: UITableViewDataSource {
     //Metodo opcional para el numero de secciones, por defecto es 1
     func numberOfSections(in tableView: UITableView) -> Int {
