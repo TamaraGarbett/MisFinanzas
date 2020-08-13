@@ -22,6 +22,8 @@ class ForgotPasswordViewController: AuthBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Recuperar contraseña"
+        
         txtEmail.attributedPlaceholder = NSAttributedString(string: "Correo electrónico", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
         btnContinueEmail.layer.cornerRadius = 5
         btnContinueEmail.layer.borderWidth = 1

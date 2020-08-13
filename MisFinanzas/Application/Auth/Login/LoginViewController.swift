@@ -21,14 +21,14 @@ class LoginViewController: AuthBaseViewController {
     //Esta funcion lee los datos ingresados por el usuario y en caso que sean correctos permite el ingreso al sistema
     @IBAction func btnLogin_Action(){
         if self.manager.authentication(email: txtEmail.text!, password: txtPassword.text!){
-            //TODO:Transicion a pantalla de menu principal
-            print("El usuario ingreso al sistema")
+            self.navigationController?.pushViewController(BudgetViewController(), animated: true)
+            clean()
         }else{
             print("Usuario no ingreso al sistema")
             lblError.isHidden = false
         }
         print("Email: \(txtEmail.text!)\nContraseña: \(txtPassword.text!)")
-        clean()
+
     }
     
     //Funcion que abre la pantalla ForgotPasswordViewController

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84012C1F24E3233700B42740 /* TypeImporte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84012C1E24E3233700B42740 /* TypeImporte.swift */; };
 		8406223C24E07B3F00196820 /* AuthBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406223B24E07B3F00196820 /* AuthBaseViewController.swift */; };
 		8406224124E08E3000196820 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406223F24E08E3000196820 /* User+CoreDataClass.swift */; };
 		8406224224E08E3000196820 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406224024E08E3000196820 /* User+CoreDataProperties.swift */; };
@@ -18,6 +19,16 @@
 		8428F6E024DB7CC00057A50B /* LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 8428F6DF24DB7CC00057A50B /* LOGO.png */; };
 		842F15A624DCBC3700B18635 /* MisFinanzas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 842F15A224DCBA7100B18635 /* MisFinanzas.xcdatamodeld */; };
 		842F15A824DCBE6500B18635 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F15A724DCBE6500B18635 /* CoreDataManager.swift */; };
+		84347FC824E49486006A5D02 /* Importe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84347FC624E49486006A5D02 /* Importe+CoreDataClass.swift */; };
+		84347FC924E49486006A5D02 /* Importe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84347FC724E49486006A5D02 /* Importe+CoreDataProperties.swift */; };
+		8479BCD024E49C6F00CDAC05 /* NewBudgetItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479BCCE24E49C6F00CDAC05 /* NewBudgetItemViewController.swift */; };
+		8479BCD124E49C6F00CDAC05 /* NewBudgetItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8479BCCF24E49C6F00CDAC05 /* NewBudgetItemViewController.xib */; };
+		8479BCD824E4A1D400CDAC05 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479BCD624E4A1D400CDAC05 /* BudgetViewController.swift */; };
+		8479BCD924E4A1D400CDAC05 /* BudgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8479BCD724E4A1D400CDAC05 /* BudgetViewController.xib */; };
+		8479BCDD24E4A24100CDAC05 /* ImporteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479BCDB24E4A24100CDAC05 /* ImporteTableViewCell.swift */; };
+		8479BCDE24E4A24100CDAC05 /* ImporteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8479BCDC24E4A24100CDAC05 /* ImporteTableViewCell.xib */; };
+		8479BCE524E4E74B00CDAC05 /* CategoryExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479BCE424E4E74B00CDAC05 /* CategoryExpense.swift */; };
+		8479BCE724E4E76300CDAC05 /* CategoryIncome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479BCE624E4E76300CDAC05 /* CategoryIncome.swift */; };
 		84864C1E24D4D99700941000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84864C1D24D4D99700941000 /* AppDelegate.swift */; };
 		84864C2524D4D99700941000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84864C2424D4D99700941000 /* Assets.xcassets */; };
 		84864C2824D4D99700941000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84864C2624D4D99700941000 /* LaunchScreen.storyboard */; };
@@ -26,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84012C1E24E3233700B42740 /* TypeImporte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeImporte.swift; sourceTree = "<group>"; };
 		8406223B24E07B3F00196820 /* AuthBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBaseViewController.swift; sourceTree = "<group>"; };
 		8406223F24E08E3000196820 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8406224024E08E3000196820 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -37,6 +49,16 @@
 		8428F6DF24DB7CC00057A50B /* LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LOGO.png; path = ../../../LOGO.png; sourceTree = "<group>"; };
 		842F15A324DCBA7100B18635 /* MisFinanzas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MisFinanzas.xcdatamodel; sourceTree = "<group>"; };
 		842F15A724DCBE6500B18635 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		84347FC624E49486006A5D02 /* Importe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Importe+CoreDataClass.swift"; sourceTree = "<group>"; };
+		84347FC724E49486006A5D02 /* Importe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Importe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8479BCCE24E49C6F00CDAC05 /* NewBudgetItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBudgetItemViewController.swift; sourceTree = "<group>"; };
+		8479BCCF24E49C6F00CDAC05 /* NewBudgetItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewBudgetItemViewController.xib; sourceTree = "<group>"; };
+		8479BCD624E4A1D400CDAC05 /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
+		8479BCD724E4A1D400CDAC05 /* BudgetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetViewController.xib; sourceTree = "<group>"; };
+		8479BCDB24E4A24100CDAC05 /* ImporteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImporteTableViewCell.swift; sourceTree = "<group>"; };
+		8479BCDC24E4A24100CDAC05 /* ImporteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImporteTableViewCell.xib; sourceTree = "<group>"; };
+		8479BCE424E4E74B00CDAC05 /* CategoryExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryExpense.swift; sourceTree = "<group>"; };
+		8479BCE624E4E76300CDAC05 /* CategoryIncome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryIncome.swift; sourceTree = "<group>"; };
 		84864C1A24D4D99700941000 /* MisFinanzas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisFinanzas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84864C1D24D4D99700941000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84864C2424D4D99700941000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +82,8 @@
 		8428F6D424DB73500057A50B /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				8479BCDF24E4E56200CDAC05 /* Enums */,
+				8479BCC524E49C0900CDAC05 /* Budget */,
 				8428F6DC24DB73F60057A50B /* Entities */,
 				8428F6D724DB736E0057A50B /* Base */,
 				8428F6D524DB73590057A50B /* Auth */,
@@ -127,6 +151,8 @@
 			children = (
 				8406223F24E08E3000196820 /* User+CoreDataClass.swift */,
 				8406224024E08E3000196820 /* User+CoreDataProperties.swift */,
+				84347FC624E49486006A5D02 /* Importe+CoreDataClass.swift */,
+				84347FC724E49486006A5D02 /* Importe+CoreDataProperties.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -138,6 +164,37 @@
 				842F15A724DCBE6500B18635 /* CoreDataManager.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		8479BCC524E49C0900CDAC05 /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				8479BCDA24E4A1F200CDAC05 /* Cells */,
+				8479BCD624E4A1D400CDAC05 /* BudgetViewController.swift */,
+				8479BCD724E4A1D400CDAC05 /* BudgetViewController.xib */,
+				8479BCCE24E49C6F00CDAC05 /* NewBudgetItemViewController.swift */,
+				8479BCCF24E49C6F00CDAC05 /* NewBudgetItemViewController.xib */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
+		8479BCDA24E4A1F200CDAC05 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8479BCDB24E4A24100CDAC05 /* ImporteTableViewCell.swift */,
+				8479BCDC24E4A24100CDAC05 /* ImporteTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8479BCDF24E4E56200CDAC05 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				84012C1E24E3233700B42740 /* TypeImporte.swift */,
+				8479BCE424E4E74B00CDAC05 /* CategoryExpense.swift */,
+				8479BCE624E4E76300CDAC05 /* CategoryIncome.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		84864C1124D4D99700941000 = {
@@ -239,8 +296,11 @@
 			files = (
 				84B631C724DDDA8400B0B950 /* ForgotPasswordViewController.xib in Resources */,
 				84864C2824D4D99700941000 /* LaunchScreen.storyboard in Resources */,
+				8479BCD124E49C6F00CDAC05 /* NewBudgetItemViewController.xib in Resources */,
+				8479BCD924E4A1D400CDAC05 /* BudgetViewController.xib in Resources */,
 				84864C2524D4D99700941000 /* Assets.xcassets in Resources */,
 				8428F6E024DB7CC00057A50B /* LOGO.png in Resources */,
+				8479BCDE24E4A24100CDAC05 /* ImporteTableViewCell.xib in Resources */,
 				8428F6D324DB72DE0057A50B /* SignUpViewController.xib in Resources */,
 				8428F6CB24DB72410057A50B /* LoginViewController.xib in Resources */,
 			);
@@ -254,10 +314,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8428F6DE24DB74EC0057A50B /* BaseViewController.swift in Sources */,
+				84012C1F24E3233700B42740 /* TypeImporte.swift in Sources */,
 				84B631C624DDDA8400B0B950 /* ForgotPasswordViewController.swift in Sources */,
+				84347FC924E49486006A5D02 /* Importe+CoreDataProperties.swift in Sources */,
+				84347FC824E49486006A5D02 /* Importe+CoreDataClass.swift in Sources */,
 				8428F6CA24DB72410057A50B /* LoginViewController.swift in Sources */,
+				8479BCE524E4E74B00CDAC05 /* CategoryExpense.swift in Sources */,
 				8406223C24E07B3F00196820 /* AuthBaseViewController.swift in Sources */,
+				8479BCE724E4E76300CDAC05 /* CategoryIncome.swift in Sources */,
+				8479BCD824E4A1D400CDAC05 /* BudgetViewController.swift in Sources */,
+				8479BCDD24E4A24100CDAC05 /* ImporteTableViewCell.swift in Sources */,
 				8406224124E08E3000196820 /* User+CoreDataClass.swift in Sources */,
+				8479BCD024E49C6F00CDAC05 /* NewBudgetItemViewController.swift in Sources */,
 				84864C1E24D4D99700941000 /* AppDelegate.swift in Sources */,
 				8406224224E08E3000196820 /* User+CoreDataProperties.swift in Sources */,
 				8428F6D224DB72DE0057A50B /* SignUpViewController.swift in Sources */,
