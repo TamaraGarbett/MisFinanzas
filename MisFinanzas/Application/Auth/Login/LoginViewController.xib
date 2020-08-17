@@ -87,7 +87,7 @@
                                 <constraint firstAttribute="height" constant="30" id="kpa-6r-3MJ"/>
                             </constraints>
                         </stackView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO.png" translatesAutoresizingMaskIntoConstraints="NO" id="68T-j7-WHO">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="68T-j7-WHO">
                             <rect key="frame" x="20" y="71" width="335" height="113"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="113" id="cFA-IO-CyM"/>
@@ -127,6 +127,6 @@
         </view>
     </objects>
     <resources>
-        <image name="LOGO.png" width="236" height="66"/>
+        <image name="LOGO" width="236" height="66"/>
     </resources>
 </document>

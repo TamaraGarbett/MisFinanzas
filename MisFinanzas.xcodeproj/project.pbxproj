@@ -7,20 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D2A19F3AAD634141B1096CC /* Pods_MisFinanzas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C22867CA222F24A7D7BF98F /* Pods_MisFinanzas.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		84012C1F24E3233700B42740 /* TypeImporte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84012C1E24E3233700B42740 /* TypeImporte.swift */; };
 		8406223C24E07B3F00196820 /* AuthBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406223B24E07B3F00196820 /* AuthBaseViewController.swift */; };
-		8406224124E08E3000196820 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406223F24E08E3000196820 /* User+CoreDataClass.swift */; };
-		8406224224E08E3000196820 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406224024E08E3000196820 /* User+CoreDataProperties.swift */; };
+		8427481824E885B9001754C1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8427481624E885B9001754C1 /* Model.xcdatamodeld */; };
 		8428F6CA24DB72410057A50B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428F6C824DB72410057A50B /* LoginViewController.swift */; };
 		8428F6CB24DB72410057A50B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8428F6C924DB72410057A50B /* LoginViewController.xib */; };
 		8428F6D224DB72DE0057A50B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428F6D024DB72DE0057A50B /* SignUpViewController.swift */; };
 		8428F6D324DB72DE0057A50B /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8428F6D124DB72DE0057A50B /* SignUpViewController.xib */; };
 		8428F6DE24DB74EC0057A50B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428F6DD24DB74EC0057A50B /* BaseViewController.swift */; };
-		8428F6E024DB7CC00057A50B /* LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 8428F6DF24DB7CC00057A50B /* LOGO.png */; };
-		842F15A624DCBC3700B18635 /* MisFinanzas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 842F15A224DCBA7100B18635 /* MisFinanzas.xcdatamodeld */; };
 		842F15A824DCBE6500B18635 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F15A724DCBE6500B18635 /* CoreDataManager.swift */; };
-		84347FC824E49486006A5D02 /* Importe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84347FC624E49486006A5D02 /* Importe+CoreDataClass.swift */; };
-		84347FC924E49486006A5D02 /* Importe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84347FC724E49486006A5D02 /* Importe+CoreDataProperties.swift */; };
 		8479BCD024E49C6F00CDAC05 /* NewBudgetItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479BCCE24E49C6F00CDAC05 /* NewBudgetItemViewController.swift */; };
 		8479BCD124E49C6F00CDAC05 /* NewBudgetItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8479BCCF24E49C6F00CDAC05 /* NewBudgetItemViewController.xib */; };
 		8479BCD824E4A1D400CDAC05 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479BCD624E4A1D400CDAC05 /* BudgetViewController.swift */; };
@@ -37,20 +33,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0250D6BC37255731D0EA1A24 /* Pods-MisFinanzas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MisFinanzas.debug.xcconfig"; path = "Target Support Files/Pods-MisFinanzas/Pods-MisFinanzas.debug.xcconfig"; sourceTree = "<group>"; };
+		3C22867CA222F24A7D7BF98F /* Pods_MisFinanzas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MisFinanzas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84012C1E24E3233700B42740 /* TypeImporte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeImporte.swift; sourceTree = "<group>"; };
 		8406223B24E07B3F00196820 /* AuthBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBaseViewController.swift; sourceTree = "<group>"; };
-		8406223F24E08E3000196820 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8406224024E08E3000196820 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8427481724E885B9001754C1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		8428F6C824DB72410057A50B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8428F6C924DB72410057A50B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		8428F6D024DB72DE0057A50B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8428F6D124DB72DE0057A50B /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		8428F6DD24DB74EC0057A50B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		8428F6DF24DB7CC00057A50B /* LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LOGO.png; path = ../../../LOGO.png; sourceTree = "<group>"; };
-		842F15A324DCBA7100B18635 /* MisFinanzas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MisFinanzas.xcdatamodel; sourceTree = "<group>"; };
 		842F15A724DCBE6500B18635 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		84347FC624E49486006A5D02 /* Importe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Importe+CoreDataClass.swift"; sourceTree = "<group>"; };
-		84347FC724E49486006A5D02 /* Importe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Importe+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8479BCCE24E49C6F00CDAC05 /* NewBudgetItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBudgetItemViewController.swift; sourceTree = "<group>"; };
 		8479BCCF24E49C6F00CDAC05 /* NewBudgetItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewBudgetItemViewController.xib; sourceTree = "<group>"; };
 		8479BCD624E4A1D400CDAC05 /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +59,7 @@
 		84864C2924D4D99700941000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B631C424DDDA8400B0B950 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		84B631C524DDDA8400B0B950 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		ADCA12C5B91D01BA7F2F5AE0 /* Pods-MisFinanzas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MisFinanzas.release.xcconfig"; path = "Target Support Files/Pods-MisFinanzas/Pods-MisFinanzas.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +67,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D2A19F3AAD634141B1096CC /* Pods_MisFinanzas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AC62F7939EF94022B3C2867 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C22867CA222F24A7D7BF98F /* Pods_MisFinanzas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8428F6D424DB73500057A50B /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +134,6 @@
 		8428F6DA24DB73BD0057A50B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8428F6DF24DB7CC00057A50B /* LOGO.png */,
 				84864C2424D4D99700941000 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -149,10 +151,6 @@
 		8428F6DC24DB73F60057A50B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				8406223F24E08E3000196820 /* User+CoreDataClass.swift */,
-				8406224024E08E3000196820 /* User+CoreDataProperties.swift */,
-				84347FC624E49486006A5D02 /* Importe+CoreDataClass.swift */,
-				84347FC724E49486006A5D02 /* Importe+CoreDataProperties.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -160,8 +158,8 @@
 		842F15A524DCBA7800B18635 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				842F15A224DCBA7100B18635 /* MisFinanzas.xcdatamodeld */,
 				842F15A724DCBE6500B18635 /* CoreDataManager.swift */,
+				8427481624E885B9001754C1 /* Model.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -202,6 +200,8 @@
 			children = (
 				84864C1C24D4D99700941000 /* MisFinanzas */,
 				84864C1B24D4D99700941000 /* Products */,
+				DED74BE4FF85DAD64502509C /* Pods */,
+				6AC62F7939EF94022B3C2867 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,6 +235,15 @@
 			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
+		DED74BE4FF85DAD64502509C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0250D6BC37255731D0EA1A24 /* Pods-MisFinanzas.debug.xcconfig */,
+				ADCA12C5B91D01BA7F2F5AE0 /* Pods-MisFinanzas.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84864C2C24D4D99700941000 /* Build configuration list for PBXNativeTarget "MisFinanzas" */;
 			buildPhases = (
+				ED42B072CA47D004B341A692 /* [CP] Check Pods Manifest.lock */,
 				84864C1624D4D99700941000 /* Sources */,
 				84864C1724D4D99700941000 /* Frameworks */,
 				84864C1824D4D99700941000 /* Resources */,
+				670AAA401E63ACFB262100DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,7 +310,6 @@
 				8479BCD124E49C6F00CDAC05 /* NewBudgetItemViewController.xib in Resources */,
 				8479BCD924E4A1D400CDAC05 /* BudgetViewController.xib in Resources */,
 				84864C2524D4D99700941000 /* Assets.xcassets in Resources */,
-				8428F6E024DB7CC00057A50B /* LOGO.png in Resources */,
 				8479BCDE24E4A24100CDAC05 /* ImporteTableViewCell.xib in Resources */,
 				8428F6D324DB72DE0057A50B /* SignUpViewController.xib in Resources */,
 				8428F6CB24DB72410057A50B /* LoginViewController.xib in Resources */,
@@ -307,6 +317,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		670AAA401E63ACFB262100DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MisFinanzas/Pods-MisFinanzas-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AKMaskField/AKMaskField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AKMaskField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MisFinanzas/Pods-MisFinanzas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED42B072CA47D004B341A692 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MisFinanzas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84864C1624D4D99700941000 /* Sources */ = {
@@ -316,21 +365,17 @@
 				8428F6DE24DB74EC0057A50B /* BaseViewController.swift in Sources */,
 				84012C1F24E3233700B42740 /* TypeImporte.swift in Sources */,
 				84B631C624DDDA8400B0B950 /* ForgotPasswordViewController.swift in Sources */,
-				84347FC924E49486006A5D02 /* Importe+CoreDataProperties.swift in Sources */,
-				84347FC824E49486006A5D02 /* Importe+CoreDataClass.swift in Sources */,
+				8427481824E885B9001754C1 /* Model.xcdatamodeld in Sources */,
 				8428F6CA24DB72410057A50B /* LoginViewController.swift in Sources */,
 				8479BCE524E4E74B00CDAC05 /* CategoryExpense.swift in Sources */,
 				8406223C24E07B3F00196820 /* AuthBaseViewController.swift in Sources */,
 				8479BCE724E4E76300CDAC05 /* CategoryIncome.swift in Sources */,
 				8479BCD824E4A1D400CDAC05 /* BudgetViewController.swift in Sources */,
 				8479BCDD24E4A24100CDAC05 /* ImporteTableViewCell.swift in Sources */,
-				8406224124E08E3000196820 /* User+CoreDataClass.swift in Sources */,
 				8479BCD024E49C6F00CDAC05 /* NewBudgetItemViewController.swift in Sources */,
 				84864C1E24D4D99700941000 /* AppDelegate.swift in Sources */,
-				8406224224E08E3000196820 /* User+CoreDataProperties.swift in Sources */,
 				8428F6D224DB72DE0057A50B /* SignUpViewController.swift in Sources */,
 				842F15A824DCBE6500B18635 /* CoreDataManager.swift in Sources */,
-				842F15A624DCBC3700B18635 /* MisFinanzas.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +502,7 @@
 		};
 		84864C2D24D4D99700941000 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0250D6BC37255731D0EA1A24 /* Pods-MisFinanzas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +517,7 @@
 		};
 		84864C2E24D4D99700941000 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADCA12C5B91D01BA7F2F5AE0 /* Pods-MisFinanzas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -507,13 +554,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		842F15A224DCBA7100B18635 /* MisFinanzas.xcdatamodeld */ = {
+		8427481624E885B9001754C1 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				842F15A324DCBA7100B18635 /* MisFinanzas.xcdatamodel */,
+				8427481724E885B9001754C1 /* Model.xcdatamodel */,
 			);
-			currentVersion = 842F15A324DCBA7100B18635 /* MisFinanzas.xcdatamodel */;
-			path = MisFinanzas.xcdatamodeld;
+			currentVersion = 8427481724E885B9001754C1 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

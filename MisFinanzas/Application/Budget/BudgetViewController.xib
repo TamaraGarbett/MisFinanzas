@@ -14,7 +14,6 @@
                 <outlet property="btnExpense" destination="Pin-lN-Dh9" id="cDs-ke-sXr"/>
                 <outlet property="btnIncome" destination="BvH-Id-927" id="tc2-0r-we2"/>
                 <outlet property="lblBudget" destination="iyu-ez-515" id="OC3-EB-V2s"/>
-                <outlet property="searchBar" destination="bBk-nk-eau" id="q3w-RZ-Hac"/>
                 <outlet property="tableView" destination="Nap-4l-v6O" id="iRO-Ef-UPV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -28,7 +27,7 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nap-4l-v6O">
-                            <rect key="frame" x="0.0" y="103" width="375" height="503.5"/>
+                            <rect key="frame" x="0.0" y="55" width="375" height="552"/>
                             <color key="backgroundColor" red="0.12549019610000001" green="0.1450980392" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="sectionIndexBackgroundColor" red="0.12549019610000001" green="0.1450980392" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,26 +35,28 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyu-ez-515">
                             <rect key="frame" x="20" y="616.5" width="335" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="bBk-nk-eau">
-                            <rect key="frame" x="0.0" y="47" width="375" height="56"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0Og-Ev-nH1">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvH-Id-927">
                                     <rect key="frame" x="0.0" y="0.0" width="187.5" height="47"/>
-                                    <state key="normal" title="Ingreso"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <state key="normal" title="+ Ingreso">
+                                        <color key="titleColor" red="0.01811671057" green="0.73024611399999995" blue="0.0046518797359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
                                     <connections>
                                         <action selector="btnIncomeAction" destination="-1" eventType="touchUpInside" id="KFz-5s-zbP"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pin-lN-Dh9">
                                     <rect key="frame" x="187.5" y="0.0" width="187.5" height="47"/>
-                                    <state key="normal" title="Gasto"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <state key="normal" title="- Gasto">
+                                        <color key="titleColor" red="1" green="0.023331267499999999" blue="0.073190404680000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
                                     <connections>
                                         <action selector="btnExpenseAction" destination="-1" eventType="touchUpInside" id="75u-hK-Yjm"/>
                                     </connections>
@@ -68,24 +69,19 @@
                     </subviews>
                     <color key="backgroundColor" red="0.12549019610000001" green="0.1450980392" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstItem="bBk-nk-eau" firstAttribute="top" secondItem="0Og-Ev-nH1" secondAttribute="bottom" id="0sh-sN-GqM"/>
                         <constraint firstAttribute="trailing" secondItem="0Og-Ev-nH1" secondAttribute="trailing" id="1hY-4K-hdC"/>
                         <constraint firstItem="0Og-Ev-nH1" firstAttribute="leading" secondItem="Zbf-5P-2yX" secondAttribute="leading" id="2Dd-4i-MQZ"/>
                         <constraint firstAttribute="bottom" secondItem="iyu-ez-515" secondAttribute="bottom" constant="10" id="4DR-G5-lRr"/>
+                        <constraint firstItem="Nap-4l-v6O" firstAttribute="top" secondItem="0Og-Ev-nH1" secondAttribute="bottom" constant="8" id="PiK-dc-n9h"/>
                         <constraint firstItem="iyu-ez-515" firstAttribute="leading" secondItem="Zbf-5P-2yX" secondAttribute="leading" constant="20" id="R0v-te-jaM"/>
                         <constraint firstItem="0Og-Ev-nH1" firstAttribute="top" secondItem="Zbf-5P-2yX" secondAttribute="top" id="Y6K-54-OZD"/>
-                        <constraint firstItem="Nap-4l-v6O" firstAttribute="top" secondItem="bBk-nk-eau" secondAttribute="bottom" id="YzM-RM-FB7"/>
                         <constraint firstAttribute="trailing" secondItem="0Og-Ev-nH1" secondAttribute="trailing" id="btk-BE-g8k"/>
-                        <constraint firstItem="Nap-4l-v6O" firstAttribute="top" secondItem="bBk-nk-eau" secondAttribute="bottom" id="dMj-gY-Tq0"/>
                         <constraint firstItem="iyu-ez-515" firstAttribute="top" secondItem="Nap-4l-v6O" secondAttribute="bottom" constant="10" id="dNo-Nw-DiW"/>
                         <constraint firstAttribute="trailing" secondItem="Nap-4l-v6O" secondAttribute="trailing" id="eLH-Cq-Amu"/>
-                        <constraint firstItem="bBk-nk-eau" firstAttribute="top" secondItem="0Og-Ev-nH1" secondAttribute="bottom" id="mLx-3y-bCG"/>
                         <constraint firstItem="Nap-4l-v6O" firstAttribute="leading" secondItem="Zbf-5P-2yX" secondAttribute="leading" id="oaa-MR-OBq"/>
                         <constraint firstItem="iyu-ez-515" firstAttribute="top" secondItem="Nap-4l-v6O" secondAttribute="bottom" constant="10" id="r34-wZ-0gh"/>
                         <constraint firstAttribute="trailing" secondItem="iyu-ez-515" secondAttribute="trailing" constant="20" id="tp6-KE-S0R"/>
                         <constraint firstItem="0Og-Ev-nH1" firstAttribute="leading" secondItem="Zbf-5P-2yX" secondAttribute="leading" id="vYv-6J-WAP"/>
-                        <constraint firstItem="bBk-nk-eau" firstAttribute="leading" secondItem="Zbf-5P-2yX" secondAttribute="leading" id="xJ1-Py-ZzX"/>
-                        <constraint firstAttribute="trailing" secondItem="bBk-nk-eau" secondAttribute="trailing" id="xru-e5-Ala"/>
                     </constraints>
                 </view>
             </subviews>

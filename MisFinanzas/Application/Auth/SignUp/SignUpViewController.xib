@@ -111,7 +111,7 @@
                                 </button>
                             </subviews>
                         </stackView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO.png" translatesAutoresizingMaskIntoConstraints="NO" id="oRZ-ki-iNB">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="oRZ-ki-iNB">
                             <rect key="frame" x="20" y="71" width="335" height="113"/>
                         </imageView>
                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verifique los datos ingresados" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgj-Rl-K3f">
@@ -149,6 +149,6 @@
         </view>
     </objects>
     <resources>
-        <image name="LOGO.png" width="236" height="66"/>
+        <image name="LOGO" width="236" height="66"/>
     </resources>
 </document>

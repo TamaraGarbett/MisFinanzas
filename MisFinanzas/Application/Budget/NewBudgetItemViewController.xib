@@ -11,7 +11,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewBudgetItemViewController" customModule="MisFinanzas" customModuleProvider="target">
             <connections>
+                <outlet property="btnCategory" destination="5WW-dL-L4I" id="gXD-OK-hed"/>
+                <outlet property="lblAmount" destination="dL5-VC-qSs" id="2ID-sa-0PP"/>
+                <outlet property="lblError" destination="h3L-j0-RxT" id="88p-f3-yo5"/>
+                <outlet property="lblFixedCost" destination="NtD-R4-mfs" id="Rep-IK-caR"/>
+                <outlet property="lblSymbolPesos" destination="iUH-2j-1dh" id="ODw-mx-OKm"/>
+                <outlet property="stackCategoryExpense" destination="rYq-JX-6Aa" id="F45-Pl-sIT"/>
+                <outlet property="stackCategoryIncome" destination="Fj0-hD-vn8" id="SNC-Ow-Np7"/>
+                <outlet property="switchFixedCost" destination="AnI-BU-NWc" id="UIr-v7-Pvh"/>
+                <outlet property="txtAmount" destination="EB2-yd-EcB" id="nTk-fK-Gcp"/>
+                <outlet property="txtDate" destination="tjd-0y-7aD" id="OlE-CC-kLR"/>
+                <outlet property="txtDescription" destination="hOw-LY-bS3" id="651-Am-8Wz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewNewBudget" destination="FDz-ST-3ec" id="lVe-i2-Vpf"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -19,9 +31,255 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDz-ST-3ec">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDz-ST-3ec" userLabel="ViewNewBudget">
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dL5-VC-qSs">
+                            <rect key="frame" x="20" y="84" width="335" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EB2-yd-EcB">
+                            <rect key="frame" x="120" y="122" width="135" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Grx-eH-Lql">
+                            <rect key="frame" x="44" y="264" width="311" height="106"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dd/mm/yyyy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tjd-0y-7aD" customClass="AKMaskField" customModule="AKMaskField">
+                                    <rect key="frame" x="0.0" y="0.0" width="311" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hOw-LY-bS3">
+                                    <rect key="frame" x="0.0" y="38" width="311" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4na-51-aH2" userLabel="StackCategory">
+                                    <rect key="frame" x="0.0" y="76" width="311" height="30"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WW-dL-L4I">
+                                            <rect key="frame" x="0.0" y="0.0" width="311" height="30"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="Categoría">
+                                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="showCategoryMenu" destination="-1" eventType="touchUpInside" id="xvh-Qn-3zp"/>
+                                            </connections>
+                                        </button>
+                                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rYq-JX-6Aa" userLabel="StackCategoryExpense">
+                                            <rect key="frame" x="0.0" y="30" width="311" height="0.0"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIO-e1-dG0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
+                                                    <state key="normal" title="Alimentos">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="selectCategoryWithSender:" destination="-1" eventType="touchUpInside" id="fop-ex-pdg"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iU1-1p-hT1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
+                                                    <state key="normal" title="Educación">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="selectCategoryWithSender:" destination="-1" eventType="touchUpInside" id="yxO-mM-DQ6"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSz-f2-Uw9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
+                                                    <state key="normal" title="Entretenimiento">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="selectCategoryWithSender:" destination="-1" eventType="touchUpInside" id="Fl4-nF-ZIf"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J95-HD-pOa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
+                                                    <state key="normal" title="Facturas">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="selectCategoryWithSender:" destination="-1" eventType="touchUpInside" id="qu9-N8-Mee"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycu-Iy-Q0t">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
+                                                    <state key="normal" title="Hogar">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="selectCategoryWithSender:" destination="-1" eventType="touchUpInside" id="p95-uW-6vH"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgU-lD-Dnc" userLabel="Ropa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
+                                                    <state key="normal" title="Ropa">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="selectCategoryWithSender:" destination="-1" eventType="touchUpInside" id="Fsf-Ax-sY0"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJH-c4-DW0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
+                                                    <state key="normal" title="Salud">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="selectCategoryWithSender:" destination="-1" eventType="touchUpInside" id="KCR-kc-72N"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RE-mz-Hh5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
+                                                    <state key="normal" title="Transporte">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="selectCategoryWithSender:" destination="-1" eventType="touchUpInside" id="V56-xe-9B1"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2q-yr-7Lk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
+                                                    <state key="normal" title="Varios">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="selectCategoryWithSender:" destination="-1" eventType="touchUpInside" id="h4w-dj-YV8"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Fj0-hD-vn8" userLabel="StackCategoryIncome">
+                                            <rect key="frame" x="0.0" y="30" width="311" height="0.0"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppy-m9-Mtq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
+                                                    <state key="normal" title="Salario">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="selectCategoryWithSender:" destination="-1" eventType="touchUpInside" id="7M6-H6-NKM"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rs6-qE-RZQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
+                                                    <state key="normal" title="Inversiones">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="selectCategoryWithSender:" destination="-1" eventType="touchUpInside" id="2aA-IK-JKF"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vug-q1-9GE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
+                                                    <state key="normal" title="Premios">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="selectCategoryWithSender:" destination="-1" eventType="touchUpInside" id="72J-c5-dPv"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7K-o5-FSE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
+                                                    <state key="normal" title="Regalos">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="selectCategoryWithSender:" destination="-1" eventType="touchUpInside" id="dSr-sv-Uph"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIP-wi-gP5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="0.0"/>
+                                                    <state key="normal" title="Varios">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="selectCategoryWithSender:" destination="-1" eventType="touchUpInside" id="5GK-q4-cV0"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <viewLayoutGuide key="safeArea" id="Nub-r8-0QF"/>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5WW-dL-L4I" firstAttribute="leading" secondItem="4na-51-aH2" secondAttribute="leading" id="1Kw-1a-PIK"/>
+                                        <constraint firstAttribute="trailing" secondItem="Fj0-hD-vn8" secondAttribute="trailing" id="2NP-iS-F7m"/>
+                                        <constraint firstItem="Fj0-hD-vn8" firstAttribute="top" secondItem="rYq-JX-6Aa" secondAttribute="bottom" id="LKV-gX-qot"/>
+                                        <constraint firstAttribute="trailing" secondItem="5WW-dL-L4I" secondAttribute="trailing" id="Rci-M8-B9a"/>
+                                        <constraint firstItem="Fj0-hD-vn8" firstAttribute="leading" secondItem="4na-51-aH2" secondAttribute="leading" id="beJ-EQ-Oq6"/>
+                                        <constraint firstItem="rYq-JX-6Aa" firstAttribute="top" secondItem="5WW-dL-L4I" secondAttribute="bottom" id="fdG-Y5-fV2"/>
+                                        <constraint firstAttribute="trailing" secondItem="rYq-JX-6Aa" secondAttribute="trailing" id="o4w-Mc-659"/>
+                                        <constraint firstItem="Fj0-hD-vn8" firstAttribute="top" secondItem="rYq-JX-6Aa" secondAttribute="bottom" id="rLF-if-Hjl"/>
+                                        <constraint firstItem="rYq-JX-6Aa" firstAttribute="leading" secondItem="4na-51-aH2" secondAttribute="leading" id="xwk-i0-xVC"/>
+                                        <constraint firstAttribute="bottom" secondItem="Fj0-hD-vn8" secondAttribute="bottom" id="zVt-kI-tkY"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gasto fijo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtD-R4-mfs">
+                            <rect key="frame" x="51" y="229" width="91" height="27"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AnI-BU-NWc">
+                            <rect key="frame" x="298" y="229" width="51" height="31"/>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUH-2j-1dh">
+                            <rect key="frame" x="103" y="125" width="18" height="25"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La fecha ingresada es incorrecta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3L-j0-RxT">
+                            <rect key="frame" x="20" y="195" width="335" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.40857225785738838" green="0.69974498056994816" blue="0.36246599890077874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Grx-eH-Lql" firstAttribute="top" secondItem="h3L-j0-RxT" secondAttribute="bottom" constant="48" id="8eV-vj-r4h"/>
+                        <constraint firstAttribute="trailing" secondItem="EB2-yd-EcB" secondAttribute="trailing" constant="120" id="AWN-AU-YFH"/>
+                        <constraint firstItem="EB2-yd-EcB" firstAttribute="top" secondItem="dL5-VC-qSs" secondAttribute="bottom" constant="8" id="BVB-0n-jbu"/>
+                        <constraint firstItem="EB2-yd-EcB" firstAttribute="leading" secondItem="FDz-ST-3ec" secondAttribute="leading" constant="120" id="DFd-ed-Ycp"/>
+                        <constraint firstItem="NtD-R4-mfs" firstAttribute="top" secondItem="EB2-yd-EcB" secondAttribute="bottom" constant="77" id="Fpa-Z7-KN1"/>
+                        <constraint firstItem="Grx-eH-Lql" firstAttribute="top" secondItem="AnI-BU-NWc" secondAttribute="bottom" constant="3.5" id="Hvc-Nc-9L2"/>
+                        <constraint firstItem="dL5-VC-qSs" firstAttribute="leading" secondItem="FDz-ST-3ec" secondAttribute="leading" constant="20" id="I8h-O1-gv7"/>
+                        <constraint firstItem="AnI-BU-NWc" firstAttribute="leading" secondItem="NtD-R4-mfs" secondAttribute="trailing" constant="156.5" id="IDe-tb-Yj4"/>
+                        <constraint firstItem="Grx-eH-Lql" firstAttribute="top" secondItem="NtD-R4-mfs" secondAttribute="bottom" constant="8" id="LwK-t4-59H"/>
+                        <constraint firstItem="NtD-R4-mfs" firstAttribute="top" secondItem="FDz-ST-3ec" secondAttribute="top" constant="229" id="Qmi-f4-gou"/>
+                        <constraint firstItem="AnI-BU-NWc" firstAttribute="top" secondItem="FDz-ST-3ec" secondAttribute="top" constant="229" id="Qz9-Yk-kpf"/>
+                        <constraint firstItem="h3L-j0-RxT" firstAttribute="top" secondItem="EB2-yd-EcB" secondAttribute="bottom" constant="43" id="TwE-XX-dDj"/>
+                        <constraint firstItem="NtD-R4-mfs" firstAttribute="leading" secondItem="FDz-ST-3ec" secondAttribute="leading" constant="51" id="UK8-as-Msv"/>
+                        <constraint firstAttribute="trailing" secondItem="h3L-j0-RxT" secondAttribute="trailing" constant="20" id="V2p-8b-O02"/>
+                        <constraint firstAttribute="trailing" secondItem="Grx-eH-Lql" secondAttribute="trailing" constant="20" id="YQn-UC-vqB"/>
+                        <constraint firstItem="iUH-2j-1dh" firstAttribute="leading" secondItem="FDz-ST-3ec" secondAttribute="leading" constant="103" id="aCi-B5-hcX"/>
+                        <constraint firstItem="h3L-j0-RxT" firstAttribute="leading" secondItem="FDz-ST-3ec" secondAttribute="leading" constant="20" id="aqz-Y7-fEa"/>
+                        <constraint firstAttribute="trailing" secondItem="dL5-VC-qSs" secondAttribute="trailing" constant="20" id="bas-gT-lbz"/>
+                        <constraint firstItem="EB2-yd-EcB" firstAttribute="top" secondItem="dL5-VC-qSs" secondAttribute="bottom" constant="8" id="gP9-Za-anD"/>
+                        <constraint firstItem="Grx-eH-Lql" firstAttribute="leading" secondItem="FDz-ST-3ec" secondAttribute="leading" constant="44" id="i6R-jx-cg4" userLabel="Stack View.leading = leading + 44"/>
+                        <constraint firstItem="iUH-2j-1dh" firstAttribute="top" secondItem="FDz-ST-3ec" secondAttribute="top" constant="125" id="jOa-ia-PfO"/>
+                        <constraint firstAttribute="trailing" secondItem="iUH-2j-1dh" secondAttribute="trailing" constant="254" id="oeJ-uA-Dre"/>
+                        <constraint firstItem="AnI-BU-NWc" firstAttribute="leading" secondItem="NtD-R4-mfs" secondAttribute="trailing" constant="156.5" id="r7X-C2-R4N"/>
+                        <constraint firstItem="dL5-VC-qSs" firstAttribute="top" secondItem="FDz-ST-3ec" secondAttribute="top" constant="84" id="rfS-21-ski"/>
+                        <constraint firstAttribute="trailing" secondItem="AnI-BU-NWc" secondAttribute="trailing" constant="28" id="vRj-ma-pdV"/>
+                        <constraint firstItem="NtD-R4-mfs" firstAttribute="top" secondItem="iUH-2j-1dh" secondAttribute="bottom" constant="79" id="wGb-Gx-laD"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,6 +290,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FDz-ST-3ec" secondAttribute="trailing" id="sx7-u7-C12"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
 </document>
