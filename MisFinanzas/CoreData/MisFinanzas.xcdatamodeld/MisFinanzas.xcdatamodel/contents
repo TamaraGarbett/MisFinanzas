@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="17G14019" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Importe" representedClassName="Importe" syncable="YES">
+        <attribute name="amount" attributeType="Double" minValueString="0" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="category" attributeType="String" defaultValueString="Otros" syncable="YES"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="descriptionImporte" attributeType="String" syncable="YES"/>
+        <attribute name="fixedCost" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="belongsTo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="importes" inverseEntity="User" syncable="YES"/>
+    </entity>
     <entity name="User" representedClassName="User" syncable="YES">
         <attribute name="answer" attributeType="String" minValueString="1" syncable="YES"/>
         <attribute name="email" attributeType="String" syncable="YES"/>
         <attribute name="password" attributeType="String" minValueString="6" syncable="YES"/>
         <attribute name="question" attributeType="String" minValueString="1" syncable="YES"/>
+        <relationship name="importes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Importe" inverseName="belongsTo" inverseEntity="Importe" syncable="YES"/>
         <uniquenessConstraints>
             <uniquenessConstraint>
                 <constraint value="email"/>
@@ -12,6 +22,7 @@
         </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="User" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Importe" positionX="-63" positionY="9" width="128" height="150"/>
+        <element name="User" positionX="-306" positionY="9" width="126" height="118"/>
     </elements>
 </model>

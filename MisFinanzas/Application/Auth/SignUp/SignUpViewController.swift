@@ -20,6 +20,8 @@ class SignUpViewController: AuthBaseViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Registrarse"
+        
         txtEmail.attributedPlaceholder = NSAttributedString(string: "Correo electrónico", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
         txtPassword.attributedPlaceholder = NSAttributedString(string: "Contraseña", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
         txtQuestion.attributedPlaceholder = NSAttributedString(string: "Pregunta de seguridad", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])

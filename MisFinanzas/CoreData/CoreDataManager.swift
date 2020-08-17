@@ -6,7 +6,7 @@ class CoreDataManager{
     
     //Constructor que inicializa la BD
     init() {
-        container = NSPersistentContainer(name: "MisFinanzas")
+        container = NSPersistentContainer(name: "Model")
         setupDatabase()
     }
     
@@ -20,6 +20,7 @@ class CoreDataManager{
             print("Database ready!")
         }
     }
+    
     //Funcion para crear un usuario en la BD
     //Recibe por parametro un email, contraseña, pregunta de seguridad y respuesta, ingresadas por el usuario.
     func createUser(email:String,password:String,question:String,answer:String){
@@ -103,6 +104,33 @@ class CoreDataManager{
             try container.persistentStoreCoordinator.execute(deleteRequest, with: container.viewContext)
         } catch let error as NSError {
             print("Error \(error)")
+        }
+    }
+  
+    //Funcion para crear un gasto en la BD
+    func createImporte(amount:Double, date:Date, descriptionImporte:String, type:Int32, fixedCost:Bool, category: Int32){
+        let id = BudgetViewController.loggedUser?.objectID
+        //Obtengo el contexto de la BD
+        let context = container.viewContext
+        if let user = context.object(with: id!) as? User {
+            //Creo un objeto de tipo User, pasando como parametro el contexto de la BD
+            let importe = Importe(context: context)
+            //Asigno los datos ingresados a los atributos del User
+            importe.belongsTo = user
+            importe.amount = amount
+            importe.date = date
+            importe.descriptionImporte = descriptionImporte
+            importe.type = type
+            importe.fixedCost = fixedCost
+            importe.category = category
+            //Intento guardar el contexto de la BD
+            do {
+                try context.save()
+                print("Importe del usuario \(user.email!) guardado")
+            } catch {
+                //En caso de error lo muestro por consola
+                print("Error guardando usuario — \(error)")
+            }
         }
     }
 }
