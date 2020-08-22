@@ -179,7 +179,7 @@ extension BudgetViewController: UISearchResultsUpdating{
             filteredBudget = budgets
         } else {
             let array = budgets.filter { budget in
-                return budget.description.contains(searchController.searchBar.text!)
+                return budget.description.lowercased().contains(searchController.searchBar.text!.lowercased())
             }
             filteredBudget = array
         }
