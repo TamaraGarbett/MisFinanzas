@@ -118,7 +118,7 @@ class NewBudgetItemViewController: BaseViewController{
         if let date = dateStringFormatter.date(from: dateString){
             lblError.isHidden = true
             //Compruebo si el monto es correcto al intentar parsearlo a Double. Si devuelve nil, hay un error. Lo formateo a 2 decimales
-            if let doubleAmount = Double(String(format: "%.2f", txtAmount.text!)){
+            if let doubleAmount = Double(txtAmount.text!){
                 lblError.isHidden = true
                 //Sólo permito que el monto sea mayor a 0
                 if doubleAmount > 0{
